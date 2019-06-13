@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FDFAE5;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #e6e6e6;
+  padding: 10px 15px;
+  border-radius: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: avatar 1s;
+  color: aliceblue;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.player-1 {
+  background-color: #CB4E4C;
+}
+.player-2 {
+  background-color: #427F60;
+}
+.player-3 {
+  background-color: #5E2BFF;
+}
+.player-4 {
+  background-color: #E1BE02;
+}
+
+.board {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  border: 2px solid #E1FCE4;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-row:nth-child(odd) {
+  flex-direction: row;
+}
+
+.board-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.board-col {
+  position: relative;
+  width: 10%;
+  padding-top: 10%;
+  border: 2px solid #E1FCE4;
+  background-color: #ADF7B6;
+
+}
+
+.board-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-item-content {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.dice {
+  border: 3px solid #cacaca;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-list {
+  width: 150px;
+}
+
+.player-list-item {
+  color: white;
+  padding: 15px 15px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.portal-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portal {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+}
+
+.portal-up {
+  background-color: #01AADA;
+}
+
+.portal-down {
+  background-color: #E77728;
+}
+
+.portal-content {
+  border-top-left-radius: 75%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 75%;
+  border-bottom-left-radius: 50%;
+  width: 60%;
+  height: 30%;
+  border: 4px solid #123;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #123;
+  font-weight: 700;
+}
+
+.podium {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+
+.podium-1,
+.podium-2,
+.podium-3 {
+  width: 30%;
+  background-color: #123
+}
+
+.podium-1 {
+  height: 60%;
+}
+
+.podium-2 {
+  height: 45%;
+}
+
+.podium-3 {
+  height: 30%;
+}
+
+.podium-3 > div,
+.podium-2 > div,
+.podium-1 > div
+ {
+  transform: translateY(-30px)
+ }
+
+.number {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.pa-2 {
+  padding: 2px
+}
+
+.white {
+  color: white;
+}
+
+@keyframes avatar {
+  0% { 
+    transform: scale(0.1); 
+  }
+  100%{ 
+    transform: scale(1);
+  }
+}

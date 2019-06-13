@@ -1,0 +1,17 @@
+export const portals = [
+  {from: 3, to: 37},
+  {from: 14, to: 32},
+  {from: 27, to: 56},
+  {from: 40, to: 62},
+  {from: 55, to: 77},
+  {from: 79, to: 98},
+  {from: 69, to: 87},
+  {from: 15, to: 8},
+  {from: 42, to: 17},
+  {from: 49, to: 12},
+  {from: 61, to: 23},
+  {from: 75, to: 47},
+  {from: 88, to: 36},
+  {from: 94, to: 77},
+  {from: 97, to: 65},
+]
